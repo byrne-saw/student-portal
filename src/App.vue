@@ -20,11 +20,11 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <router-link class="dropdown-item" to="/">Home</router-link>
-              <router-link class="dropdown-item" to="/recipes/new">Create Resume</router-link>
+              <router-link class="dropdown-item" to="/update">Update Resume</router-link>
               <div class="dropdown-divider"></div>
-              <router-link class="dropdown-item" to="/signup">Signup</router-link>
-              <router-link class="dropdown-item" to="/login">Login</router-link>
-              <router-link class="dropdown-item" to="/logout">Logout</router-link>
+              <router-link class="dropdown-item" to="/signup">Sign up</router-link>
+              <router-link class="dropdown-item" to="/signin">Sign In</router-link>
+ 
             </div>
           </li>
           <li class="nav-item">
@@ -39,7 +39,7 @@
     </nav>
     <div class="container">
          <router-view/>
-    </div>
+</div>
   </div>
 </template>
 
