@@ -4,22 +4,57 @@
 
   <form>
  
- <h1>Login</h1>
-        <ul>
-          <li class="text-danger" v-for="error in errors">{{ error }}</li>
-        </ul>
+      <div class="form-group">
 
-<div>  
-<input class="form-control form-control-sm" type="text" placeholder="Start Date">
-</div>
+        <h3>Student Attributes</h3>
+        First Name: <br>
+        <input class="form-control" type="text" placeholder="First Name">
+        Last Name:  <br>
+        <input class="form-control" type="text" placeholder="Last Name">
+        Email: <br>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+        Phone Number: <br>
+        <input class="form-control" type="tel" placeholder="555-555-5555">
+        Short Bio: <br>
 
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        LinkedIn URL <br>
+        <input class="form-control" type="url" placeholder="https://www.linkedin.com/in/hommer-zollenger/">
+        Twitter Handle:  <br>
+        <input class="form-control" type="text" placeholder="@homerZZZZ">
+        Personal Blog/Website URL <br>
+        <input class="form-control" type="url" placeholder="https://www.homeskoolkids.com/">
+        <br><br>
+        <div> 
 
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <h3>Education</h3>
 
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        Start Date: <br> 
+        <input class="form-control form-control-sm" type="text" placeholder="Start Date">
+        </div>
+        <div>
+        End Date: <br>
+        <input class="form-control form-control-sm" type="text" placeholder="End Date">
+        </div>
+        <div>
+        Degree: <br>
+        <input class="form-control form-control-sm" type="text" placeholder="Degree">
+        </div>
+        <div>
+        University Name: <br>
+        <input class="form-control form-control-sm" type="text" placeholder="University Name">
+        </div>
+        Details: <br>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <br><br>
+
+              <input type="submit" class="btn btn-primary" value="Submit">
+
+           
+
+ 
     </div>
+    
   </form>
   </div>
 
