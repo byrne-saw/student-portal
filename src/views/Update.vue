@@ -43,7 +43,33 @@
 export default {
   data: function() {
     return {
+      student: [
+        first_name:
+        email: "john.johnson@gmail.com",
+        phone_number: "888-999-1234",
+        short_bio: "I am an experienced Software developer looking for work",
+        linkin_url: "@linkin.com",
+        twitter: "twitter.com",
+        personal_website: "johnjohnson.com",
+        online_resume: "johnjohnson.com"
+        github: "john@github"
+        photo_img: 
+      ],
+      experience: [
+        start_date: "",
+        end_date: "",
+        job_title: "Web Developer",
+        company_name: "Good Company"
+        details: ""
+      ],
+      education: [
+      start_date: "",
+      end_date: "",
+      degree: ""
+      ]
+     
     };
+
   },
   created: function() {},
   methods: {},
