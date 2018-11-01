@@ -56,8 +56,25 @@
 
 
 
+      
       <h3>Education:</h3>
-
+      Start Date: <br> 
+      <input class="form-control form-control-sm" type="text" placeholder="Start Date">
+      <div>
+      End Date: <br>
+      <input class="form-control form-control-sm" type="text" placeholder="End Date">
+      </div>
+      <div>
+      Degree: <br>
+      <input class="form-control form-control-sm" type="text" placeholder="Degree">
+      </div>
+      <div>
+      University Name: <br>
+      <input class="form-control form-control-sm" type="text" placeholder="University Name">
+      </div>
+      Details: <br>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <br><br>
 
 
 
@@ -84,9 +101,11 @@
 
 
 
+              <input type="submit" class="btn btn-primary" value="Submit">
 
-      
-    
+           
+
+ 
     </div>
   </form>
   </div>
