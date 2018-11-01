@@ -1,10 +1,10 @@
 <template>
   <div class="update">
-  <div style="height: 50px"></div> 
+  <div style="height: 50px"></div>
 
   <form>
     <div class="form-group">
-      <h3>Student Attributes</h3>
+      <h3>Contact Info:</h3>
       <div class="row">
         <div class="col">
           First Name: <br> <input class="form-control" type="text" placeholder="First Name">
@@ -45,7 +45,38 @@
           Photo URL <br> <input class="form-control" type="url" placeholder="https://www.imgur.com/your_photo">
         </div>
       </div>
-      Short Bio: <br> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div style="height: 50px"></div>
+      <h3>Short Bio:</h3>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+      <div style="height: 50px"></div>
+      <h3>Experience:</h3>
+
+
+
+
+
+
+      <h3>Education:</h3>
+
+
+
+
+
+
+      <h3>Skills:</h3>
+
+
+
+
+
+
+      <h3>Capstone:</h3>
+
+
+
+
+      
+
 
       
 
@@ -57,7 +88,6 @@
       
     
     </div>
-    
   </form>
   </div>
 
