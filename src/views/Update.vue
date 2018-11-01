@@ -45,27 +45,35 @@ export default {
     return {
       student: [
         first_name:
-        email: "john.johnson@gmail.com",
-        phone_number: "888-999-1234",
-        short_bio: "I am an experienced Software developer looking for work",
-        linkin_url: "@linkin.com",
-        twitter: "twitter.com",
-        personal_website: "johnjohnson.com",
-        online_resume: "johnjohnson.com"
-        github: "john@github"
+        email: "",
+        phone_number: "",
+        short_bio: "",
+        linkin_url: "",
+        twitter: "",
+        personal_website: "",
+        online_resume: ""
+        github: ""
         photo_img: 
       ],
       experience: [
         start_date: "",
         end_date: "",
-        job_title: "Web Developer",
-        company_name: "Good Company"
+        job_title: "",
+        company_name: ""
         details: ""
       ],
       education: [
       start_date: "",
       end_date: "",
-      degree: ""
+      degree: "",
+      university_name: "",
+      ],
+      skill_name: "",
+      capstone: [
+      name: "",
+      description: "",
+      url: "",
+      
       ]
      
     };
