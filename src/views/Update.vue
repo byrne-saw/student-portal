@@ -64,50 +64,13 @@
 </style>
 
 <script>
-import axios from "axios";
-
 export default {
-  template: "#login-page",
   data: function() {
     return {
-      student: [
-        first_name:
-        email: "",
-        phone_number: "",
-        short_bio: "",
-        linkin_url: "",
-        twitter: "",
-        personal_website: "",
-        online_resume: ""
-        github: ""
-        photo_img: 
-      ],
-      experience: [
-        start_date: "",
-        end_date: "",
-        job_title: "",
-        company_name: ""
-        details: ""
-      ],
-      education: [
-      start_date: "",
-      end_date: "",
-      degree: "",
-      university_name: "",
-      ],
-      skill_name: "",
-      capstone: [
-      name: "",
-      description: "",
-      url: "",
-      
-      ]
     };
-
   },
-  methods: {
-
-  },
+  created: function() {},
+  methods: {},
   computed: {}
 };
 </script>
