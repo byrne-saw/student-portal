@@ -119,9 +119,48 @@
 export default {
   data: function() {
     return {
-    };
+
+      student: [ 
+      {
+        studentName: "",
+        email: "",
+        phoneNumber: "",
+        shortBio: "",
+        linkinUrl: "",
+        twitter: "",
+        personalWebsite: "",
+        onlineResume: "",
+        github: "",
+        photoImg: "",
+      }],
+      experience: [ 
+      {
+        startDate: "",
+        endDate: "",
+        jobTitle: "",
+        companyName: "",
+        details: "",
+      }],
+      education: [
+      {
+      startDate: "",
+      endDate: "",
+      degree: "",
+      universityName: "",
+      }],
+      skillName: "",
+      capstone: [
+      {
+      name: "",
+      description: "",
+      url: "",
+      
+      }]   
+   };
   },
-  created: function() {},
+  created: function() {
+
+  },
   methods: {},
   computed: {}
 };
