@@ -45,43 +45,49 @@
 export default {
   data: function() {
     return {
-      student: [
-        first_name:
+      student: [ 
+      {
+        studentName: "",
         email: "",
-        phone_number: "",
-        short_bio: "",
-        linkin_url: "",
+        phoneNumber: "",
+        shortBio: "",
+        linkinUrl: "",
         twitter: "",
-        personal_website: "",
-        online_resume: ""
-        github: ""
-        photo_img: 
-      ],
-      experience: [
-        start_date: "",
-        end_date: "",
-        job_title: "",
-        company_name: ""
-        details: ""
-      ],
+        personalWebsite: "",
+        onlineResume: "",
+        github: "",
+        photoImg: "",
+      }],
+      experience: [ 
+      {
+        startDate: "",
+        endDate: "",
+        jobTitle: "",
+        companyName: "",
+        details: "",
+      }],
       education: [
-      start_date: "",
-      end_date: "",
+      {
+      startDate: "",
+      endDate: "",
       degree: "",
-      university_name: "",
-      ],
-      skill_name: "",
+      universityName: "",
+      }],
+      skillName: "",
       capstone: [
+      {
       name: "",
       description: "",
       url: "",
       
-      ]
+      }]
      
     };
 
   },
-  created: function() {},
+  created: function() {
+
+  },
   methods: {},
   computed: {}
 };
