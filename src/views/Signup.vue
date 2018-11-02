@@ -50,7 +50,7 @@ export default {
         password_confirmation: this.passwordConfirmation
       };
       axios
-        .post("http://localhost:3000/api/users", params)
+        .post("https://blooming-caverns-85738.herokuapp.com/api/users", params)
         .then(response => {
           this.$router.push("/login");
         })

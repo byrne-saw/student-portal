@@ -7,7 +7,7 @@
       <h3>Contact Info:</h3>
       <div class="row">
         <div class="col">
-          First Name: <br> <input class="form-control" type="text" v-bind:placeholder="student.studentName">
+          First Name: <br> <input class="form-control" type="text" v-bind:placeholder="students.first">
         </div>
         <div class="col">
           Last Name: <br> <input class="form-control" type="text" placeholder="Last Name">
