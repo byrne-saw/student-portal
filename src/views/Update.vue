@@ -87,6 +87,7 @@
       <div style="height: 50px"></div>
 
       
+
       <h3>Skills:</h3>
       Skills: <br><input class="form-control form-control-sm" type="text" placeholder="Skill">
       <div style="height: 50px"></div>
@@ -104,6 +105,7 @@
       Screenshot URL: <br> <input class="form-control" type="url" placeholder="https://www.imgur.com/your_photo">
       <div style="height: 50px"></div>
       <input type="submit" class="btn btn-primary" value="Submit">
+
     </div>
   </form>
   </div>
@@ -114,14 +116,43 @@
 </style>
 
 <script>
+var axios = require('axios');
+
 export default {
   data: function() {
     return {
-      student: {}
+
+      students: {},
+          
     };
   },
-  created: function() {},
-  methods: {},
+  created: function() {
+    axios
+      .get("https://blooming-caverns-85738.herokuapp.com/api/students/2")
+      .then(response => {
+        this.students = response.data;
+      });
+    console.log(this.students);
+  },
+  methods: {
+    // submitData: function() {
+    //   this.errors = [];
+    //   var params = {
+    //                 name: this.newPerson.name,
+    //                 bio: this.newPerson.bio
+    //                 };
+    //   axios
+    //     .post("http://localhost:3000/api/people", params)
+    //     .then(response => {
+    //       this.people.push(response.data);
+    //       this.newPerson = {name: "", bio: "", bioVisible: false};
+    //     })
+    //     .catch(error => {
+    //       this.errors = error.response.data.errors;
+    //     });
+    // },
+  },
+
   computed: {}
 };
 </script>
