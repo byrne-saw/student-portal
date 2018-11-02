@@ -120,9 +120,7 @@ export default {
       student: {}
     };
   },
-  created: function() {
-
-  },
+  created: function() {},
   methods: {},
   computed: {}
 };
