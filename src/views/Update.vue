@@ -118,12 +118,9 @@ export default {
   data: function() {
     return {
       student: {}
-
     };
   },
-  created: function() {
-
-  },
+  created: function() {},
   methods: {},
   computed: {}
 };
