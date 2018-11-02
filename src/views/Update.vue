@@ -141,7 +141,22 @@ export default {
         companyName: "",
         details: "",
       }],
+      newExperience: [ 
+      {
+        startDate: "",
+        endDate: "",
+        jobTitle: "",
+        companyName: "",
+        details: "",
+      }],
       education: [
+      {
+      startDate: "",
+      endDate: "",
+      degree: "",
+      universityName: "",
+      }],
+      newEducation: [
       {
       startDate: "",
       endDate: "",
@@ -158,10 +173,14 @@ export default {
       }]   
    };
   },
-  created: function() {
-
+  created: function() {},
+  methods: {
+    addExperience: function() {
+      var params = {
+                    startDate: this.newExperience
+      }
+    }
   },
-  methods: {},
   computed: {}
 };
 </script>
