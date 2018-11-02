@@ -7,7 +7,7 @@
       <h3>Contact Info:</h3>
       <div class="row">
         <div class="col">
-          First Name: <br> <input class="form-control" type="text" placeholder="First Name">
+          First Name: <br> <input class="form-control" type="text" v-bind:placeholder="student.studentName">
         </div>
         <div class="col">
           Last Name: <br> <input class="form-control" type="text" placeholder="Last Name">
@@ -49,63 +49,61 @@
       <h3>Short Bio:</h3>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
       <div style="height: 50px"></div>
+
       <h3>Experience:</h3>
+      <div class="row">
+        <div class="col">
+          Company Name: <br><input class="form-control form-control-sm" type="text" placeholder="University Name">
+        </div>
+        <div class="col">
+          Job Title: <br><input class="form-control form-control-sm" type="text" placeholder="University Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Start Date:<br> <input class="form-control form-control-sm" type="text" placeholder="Start Date">
+        </div>
+        <div class="col">
+          End Date: <br> <input class="form-control form-control-sm" type="text" placeholder="End Date">
+        </div>
+      </div>
+      Details: <br><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-
-
-
-
-
+      <div style="height: 50px"></div>
       
       <h3>Education:</h3>
-      Start Date: <br> 
-      <input class="form-control form-control-sm" type="text" placeholder="Start Date">
-      <div>
-      End Date: <br>
-      <input class="form-control form-control-sm" type="text" placeholder="End Date">
+      University Name: <br><input class="form-control form-control-sm" type="text" placeholder="University Name">
+      <div class="row">
+        <div class="col">
+          Start Date:<br> <input class="form-control form-control-sm" type="text" placeholder="Start Date">
+        </div>
+        <div class="col">
+          End Date: <br> <input class="form-control form-control-sm" type="text" placeholder="End Date">
+        </div>
       </div>
-      <div>
       Degree: <br>
       <input class="form-control form-control-sm" type="text" placeholder="Degree">
-      </div>
-      <div>
-      University Name: <br>
-      <input class="form-control form-control-sm" type="text" placeholder="University Name">
-      </div>
-      Details: <br>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <br><br>
+      Details: <br><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div style="height: 50px"></div>
 
-
-
-
-
+      
       <h3>Skills:</h3>
-
-
-
-
-
-
+      Skills: <br><input class="form-control form-control-sm" type="text" placeholder="Skill">
+      <div style="height: 50px"></div>
+      
       <h3>Capstone:</h3>
-
-
-
-
-      
-
-
-      
-
-
-
-
-
-              <input type="submit" class="btn btn-primary" value="Submit">
-
-           
-
- 
+      <div class="row">
+        <div class="col">
+          Name: <br> <input class="form-control" type="text" placeholder="student.studentName">
+        </div>
+        <div class="col">
+          URL: <br> <input class="form-control" type="text" placeholder="url">
+        </div>
+      </div>
+      Description: <br><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      Screenshot URL: <br> <input class="form-control" type="url" placeholder="https://www.imgur.com/your_photo">
+      <div style="height: 50px"></div>
+      <input type="submit" class="btn btn-primary" value="Submit">
     </div>
   </form>
   </div>
@@ -119,44 +117,9 @@
 export default {
   data: function() {
     return {
+      student: {}
 
-      student: [ 
-      {
-        studentName: "",
-        email: "",
-        phoneNumber: "",
-        shortBio: "",
-        linkinUrl: "",
-        twitter: "",
-        personalWebsite: "",
-        onlineResume: "",
-        github: "",
-        photoImg: "",
-      }],
-      experience: [ 
-      {
-        startDate: "",
-        endDate: "",
-        jobTitle: "",
-        companyName: "",
-        details: "",
-      }],
-      education: [
-      {
-      startDate: "",
-      endDate: "",
-      degree: "",
-      universityName: "",
-      }],
-      skillName: "",
-      capstone: [
-      {
-      name: "",
-      description: "",
-      url: "",
-      
-      }]   
-   };
+    };
   },
   created: function() {
 
