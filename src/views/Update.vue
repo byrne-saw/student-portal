@@ -118,7 +118,6 @@ export default {
   data: function() {
     return {
       student: {}
-
     };
   },
   created: function() {
